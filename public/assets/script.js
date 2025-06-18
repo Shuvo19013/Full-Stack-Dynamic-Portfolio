@@ -12,6 +12,20 @@
     // Show prompt when clicking .title element
     document.querySelectorAll(".title").forEach((abc) => {
       abc.onclick = function () {
-        prompt(this.innerText);
+        this.innerHTML=`
+        <h3>
+            <a href ="#"> This is JS </a>
+            <p >This is assigned Dynamically </p>
+        </h3>
+
+        `;
+
+        this.style.color = "yellow";
+        this.style.backgroundColor ="#000000";
+        this.style.borderRadius ="10px";
+        this.style.padding ="20px";
+
       };
     });
+
+    

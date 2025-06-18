@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-    }
-    .disp-flex {
-      display: flex;
-    }
-    .flex-justify-space {
-      justify-content: space-between;
-    }
-    .p {
-      padding: 10px;
-    }
-    nav {
-      background-color: aqua;
-    }
-    .no-decor {
-      text-decoration: none;
-      margin: 0 10px;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .disp-flex {
+            display: flex;
+        }
+
+        .flex-justify-space {
+            justify-content: space-between;
+        }
+
+        .new {
+            padding: 10px;
+        }
+
+        nav {
+            background-color: aqua;
+        }
+
+        .no-decor {
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
 </head>
+
 <body>
-  <nav>
-    <div class="disp-flex flex-justify-space">
-      <div class="logo"><p>Shuvo</p></div>
-      <div class="new">
-        <a class="no-decor" href="#">About</a>
-        <a class="no-decor" href="#">Research Project</a>
-        <a class="no-decor" href="#">Blog</a>
-        <a class="no-decor" href="#">Contact</a>
-        <a class="no-decor" href="#">Linked In</a>
-        <a class="no-decor" href="#">Git</a>
-      </div>
-    </div>
-  </nav>
+    <nav>
+        <div class="disp-flex flex-justify-space">
+            <div class="logo">
+                <p>Shuvo</p>
+            </div>
+            <div class="new">
+                <a class="no-decor" href="#">About</a>
+                <a class="no-decor" href="#">Research Project</a>
+                <a class="no-decor" href="#">Blog</a>
+                <a class="no-decor" href="#">Contact</a>
+                <a class="no-decor" href="#">Linked In</a>
+                <a class="no-decor" href="#">Git</a>
+            </div>
+        </div>
+    </nav>
 
-  <section>
-  <div class="disp-flex flex-justify-space">
-    <div class="img1">
-      <img src="{{ asset('assets/logo.jpg') }}" alt="Logo" style="width: 200px; height: auto;" />
-    </div>
-    <div>about</div>
-  </div>
+    <section>
+        <div class="disp-flex flex-justify-space">
+            <div class="img1">
+                <img src="{{ asset('assets/logo.jpg') }}" alt="Logo" style="width: 200px; height: auto;" />
+            </div>
+            <div>about</div>
+        </div>
 
-  <div class="disp-flex flex-justify-space">
-    <div>
-      Portfolio
-      <h1 class="title">I am Shuvo</h1>
-      <p id="test">Daffodil International University</p>
-    </div>
-    <div>My projects</div>
-  </div>
-</section>
+        <div class="disp-flex flex-justify-space">
+            <div>
+                Portfolio
+                <h1 class="title">I am Shuvo</h1>
+                <p id="test">Daffodil International University</p>
+            </div>
+            <div>My projects</div>
+        </div>
+    </section>
 
 
-  <script src="{{ asset('assets/script.js') }}"></script>
+    <script src="{{ asset('assets/script.js') }}"></script>
 </body>
+
 </html>
