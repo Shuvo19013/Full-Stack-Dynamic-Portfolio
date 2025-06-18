@@ -20,10 +20,9 @@
 
         `;
 
-        this.style.color = "yellow";
-        this.style.backgroundColor ="#000000";
-        this.style.borderRadius ="10px";
-        this.style.padding ="20px";
+       this.classList.add("card");
+       avatar = document.getElementById("avatar");
+       avatar.src = "" avatar.classList.add("card");
 
       };
     });
