@@ -1,0 +1,17 @@
+ // Show innerText of the #test element
+    console.log(document.getElementById("test").innerText);
+
+    // Add alert on clicking any child inside .new
+    const tags = document.querySelector(".new").children;
+    for (let i = 0; i < tags.length; i++) {
+      tags[i].addEventListener("click", function (event) {
+        alert(event.target.innerText);
+      });
+    }
+
+    // Show prompt when clicking .title element
+    document.querySelectorAll(".title").forEach((abc) => {
+      abc.onclick = function () {
+        prompt(this.innerText);
+      };
+    });
