@@ -7,10 +7,15 @@
         <ul>
             <li><a href="#hero">Home</a></li>
             <li><a href="#About">About Me</a></li>
-           <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#Skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="{{ asset('assets/Shuvo_Resume.pdf') }}" download class="resume-btn">Resume</a></li>
+
+            <li>
+                <button id="darkModeToggle" class="dark-toggle">🌙</button>
+            </li>
+
         </ul>
     </nav>
 </header>
