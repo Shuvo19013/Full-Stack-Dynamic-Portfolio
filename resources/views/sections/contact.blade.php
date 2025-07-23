@@ -10,15 +10,12 @@
             <div class="contact-box">
                 <p><strong>Phone:</strong><br>+880 1737611605</p>
             </div>
-            <div class="contact-box">
-                <p><strong>Location:</strong><br>YKSG2, Daffodil International University</p>
-            </div>
+            
         </div>
         <form class="contact-form">
             <input type="text" placeholder="Your Name" value="shuvo" required />
             <input type="text" placeholder="Phone Number" required />
             <input type="email" placeholder="Email" required />
-            <input type="text" placeholder="Subject" required />
             <textarea placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
