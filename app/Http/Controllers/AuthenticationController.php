@@ -17,9 +17,11 @@ class AuthenticationController extends Controller
         ]);
 
         if(Auth::attempt($credentials)){
-            echo "Login Successful";
+
+          return redirect('admin/dashboard');
+        
         }else{
-            echo "Login Failed";
+            echo redirect ('/login');
         }
 
     }

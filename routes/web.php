@@ -63,3 +63,8 @@ Route::get('/register', function () {
 Route::post('/register', [AuthenticationController::class, 'register'])->name('register');
 
 Route::get('/admin/dashboard', [DashboardController::class,"index"])->name("dashboard");
+
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+});
